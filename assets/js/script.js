@@ -1,5 +1,5 @@
 var currentNumberWrapper1 = document.getElementById("currentNumber1");
-var currentNumberWrapper2 = document.getElementById("currentNumber2");
+var rotulo = document.getElementById("rotulo");
 var currentNumber = 0;
 
 
@@ -11,18 +11,18 @@ function increment(){
         currentNumber = currentNumber +1;
         currentNumberWrapper1.innerHTML = currentNumber;
         currentNumberWrapper1.className = "text-nowrap bd-highlight";
-        currentNumberWrapper2.className = "text-nowrap bd-highlight";
-        currentNumberWrapper2.innerHTML = "ZERO";
+        rotulo.className = "text-nowrap bd-highlight";
+        rotulo.innerHTML = "ZERO";
 
     } else if (currentNumber < 0 ){
         currentNumber = currentNumber +1;
         currentNumberWrapper1.innerHTML = currentNumber;
-        currentNumberWrapper2.innerHTML = "NEGATIVO";
+        rotulo.innerHTML = "NEGATIVO";
     
     } else {
         currentNumber = currentNumber +1;
         currentNumberWrapper1.innerHTML = currentNumber;
-        currentNumberWrapper2.innerHTML = "POSITIVO";
+        rotulo.innerHTML = "POSITIVO";
         
         }
 }
@@ -32,19 +32,19 @@ function decrement(){
     if (currentNumber == 1 ){
         currentNumber = currentNumber -1;
         currentNumberWrapper1.innerHTML = currentNumber;
-        currentNumberWrapper2.innerHTML = "ZERO";
+        rotulo.innerHTML = "ZERO";
 
     } else if (currentNumber > 0 ){
         currentNumber = currentNumber -1;
         currentNumberWrapper1.innerHTML = currentNumber;
-        currentNumberWrapper2.innerHTML = "POSITIVO";
+        rotulo.innerHTML = "POSITIVO";
         
     } else {
         currentNumber = currentNumber -1;
         currentNumberWrapper1.innerHTML = currentNumber;
-        currentNumberWrapper2.innerHTML = "NEGATIVO";
+        rotulo.innerHTML = "NEGATIVO";
         currentNumberWrapper1.className = "text-danger bd-highlight";
-        currentNumberWrapper2.className = "text-danger bd-highlight";
+        rotulo.className = "text-danger bd-highlight";
             
     }   
 }
